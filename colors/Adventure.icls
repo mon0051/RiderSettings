@@ -4,7 +4,7 @@
     <property name="created">2017-03-21T17:30:24</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.1.0.0</property>
-    <property name="modified">2017-08-10T11:27:19</property>
+    <property name="modified">2017-08-10T13:21:25</property>
     <property name="originalScheme">Atom OneDark copy1</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.04" />
@@ -254,7 +254,6 @@
     <option name="DEFAULT_ATTRIBUTE">
       <value>
         <option name="FOREGROUND" value="a4dcff" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_BRACES">
@@ -270,7 +269,6 @@
     <option name="DEFAULT_CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="4ec9b0" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
@@ -363,7 +361,12 @@
     <option name="DEFAULT_KEYWORD">
       <value>
         <option name="FOREGROUND" value="4592d0" />
-        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DEFAULT_LABEL">
+      <value>
+        <option name="EFFECT_COLOR" value="808080" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
@@ -385,7 +388,6 @@
     <option name="DEFAULT_NUMBER">
       <value>
         <option name="FOREGROUND" value="b5cea8" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
@@ -706,9 +708,19 @@
         <option name="FOREGROUND" value="d69d85" />
       </value>
     </option>
+    <option name="ReSharper.EVENT_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="4ec9b0" />
+      </value>
+    </option>
     <option name="ReSharper.IL_KEYWORD">
       <value>
         <option name="FOREGROUND" value="f5bb12" />
+      </value>
+    </option>
+    <option name="ReSharper.NAMESPACE_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="4ec9b0" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
