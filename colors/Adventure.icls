@@ -4,11 +4,20 @@
     <property name="created">2017-03-21T17:30:24</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.1.0.0</property>
-    <property name="modified">2017-08-10T13:47:02</property>
+    <property name="modified">2017-05-05T12:53:16</property>
     <property name="originalScheme">Atom OneDark copy1</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.04" />
   <option name="EDITOR_FONT_SIZE" value="16" />
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="Consolas" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="Source Code Pro" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <option name="CONSOLE_LINE_SPACING" value="1.03" />
   <option name="EDITOR_FONT_NAME" value="Source Code Pro" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
@@ -177,13 +186,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="CTRL_CLICKABLE">
-      <value>
-        <option name="FOREGROUND" value="56def0" />
-        <option name="EFFECT_COLOR" value="56def0" />
-        <option name="EFFECT_TYPE" value="1" />
-      </value>
-    </option>
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="c8c8c8" />
@@ -245,6 +247,7 @@
     <option name="DEFAULT_ATTRIBUTE">
       <value>
         <option name="FOREGROUND" value="a4dcff" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_BRACES">
@@ -260,6 +263,7 @@
     <option name="DEFAULT_CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="4ec9b0" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
@@ -302,6 +306,7 @@
     <option name="DEFAULT_ENTITY">
       <value>
         <option name="FOREGROUND" value="b5cea8" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
@@ -350,13 +355,7 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="4592d0" />
-      </value>
-    </option>
-    <option name="DEFAULT_LABEL">
-      <value>
-        <option name="EFFECT_COLOR" value="808080" />
-        <option name="EFFECT_TYPE" value="1" />
+        <option name="FOREGROUND" value="f5bb12" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
@@ -378,6 +377,7 @@
     <option name="DEFAULT_NUMBER">
       <value>
         <option name="FOREGROUND" value="b5cea8" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
@@ -425,6 +425,7 @@
     <option name="DEFAULT_VALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="b5cea8" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
@@ -494,8 +495,8 @@
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="485666" />
-        <option name="BACKGROUND" value="242a33" />
+        <option name="FOREGROUND" value="dcdcdc" />
+        <option name="BACKGROUND" value="3399ff" />
       </value>
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
@@ -697,25 +698,9 @@
         <option name="FOREGROUND" value="d69d85" />
       </value>
     </option>
-    <option name="ReSharper.EVENT_IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="4ec9b0" />
-      </value>
-    </option>
     <option name="ReSharper.IL_KEYWORD">
       <value>
         <option name="FOREGROUND" value="f5bb12" />
-      </value>
-    </option>
-    <option name="ReSharper.LATE_BOUND_IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="c8c8c8" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="ReSharper.NAMESPACE_IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="4ec9b0" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
