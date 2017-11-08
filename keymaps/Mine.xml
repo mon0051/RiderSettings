@@ -1,7 +1,16 @@
 <keymap version="1" name="Mine" parent="$default">
+  <action id="BuildSolutionAction" />
   <action id="CopyElement" />
+  <action id="GotoFile" />
+  <action id="GotoTypeDeclaration">
+    <mouse-shortcut keystroke="shift control button1" />
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
   <action id="NewScratchFile">
     <keyboard-shortcut first-keystroke="shift ctrl alt i" />
+  </action>
+  <action id="RebuildSolutionAction">
+    <keyboard-shortcut first-keystroke="shift ctrl b" />
   </action>
   <action id="Run">
     <keyboard-shortcut first-keystroke="shift f10" />
