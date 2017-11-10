@@ -4,7 +4,7 @@
     <property name="created">2017-03-21T17:30:24</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.1.0.0</property>
-    <property name="modified">2017-11-08T14:32:26</property>
+    <property name="modified">2017-11-10T11:16:04</property>
     <property name="originalScheme">Atom OneDark copy1</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.04" />
@@ -741,6 +741,12 @@
       <value>
         <option name="BACKGROUND" value="113d6f" />
         <option name="ERROR_STRIPE_COLOR" value="113d6f" />
+      </value>
+    </option>
+    <option name="SQL_COLUMN">
+      <value>
+        <option name="FOREGROUND" value="c8c8c8" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
