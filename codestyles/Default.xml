@@ -1,1 +1,4 @@
-<code_scheme name="Default" />
+<code_scheme name="Default">
+  <option name="HTML_ATTRIBUTE_WRAP" value="2" />
+  <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
+</code_scheme>
