@@ -6,4 +6,12 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="inputt" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;control-label&quot; for=&quot;$dashname$&quot; translate&gt;$spaceName$&lt;/label&gt;&#10;    &lt;input id=&quot;$varname$&quot;&#10;           name=&quot;$varname$&quot;&#10;           type=&quot;text&quot;&#10;           class=&quot;form-control input-md&quot;&#10;           ng-required=&quot;true&quot;&#10;           ng-model=&quot;vm.inputModel.$varname$&quot;&gt;&#10;&#10;    &lt;div class=&quot;field-statuses&quot;&gt;&#10;        &lt;fs-validate field=&quot;$varname&quot; label=&quot;Name&quot;/&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Form Text Input" toReformat="false" toShortenFQNames="true">
+    <variable name="varname" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="spaceName" expression="spaceSeparated(String)" defaultValue="" alwaysStopAt="false" />
+    <variable name="dashname" expression="lowercaseAndDash(String)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>

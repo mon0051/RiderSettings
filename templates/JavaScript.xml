@@ -20,4 +20,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="comp" value="(function () {&#10;    'use strict';&#10;&#10;    angular&#10;    .module('app.$module$')&#10;    .component('$name$', {&#10;        templateUrl: '$templateDir$',&#10;        bindings: {&#10;            inputModel: '='&#10;        },&#10;        controller: Controller,&#10;        controllerAs: 'vm'&#10;    });&#10;&#10;    Controller.$inject = ['tableService', 'lodash'];&#10;&#10;    /* @ngInject */&#10;    function Controller(tableService, lodash) {&#10;        var _ = lodash;&#10;        var vm = this;&#10;        &#10;    }&#10;})();" description="AngularJS component" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="templateDir" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>

@@ -1,5 +1,5 @@
 <templateSet group="Angular2">
-  <template name="comp" value="@Component({&#10;    moduleId: module.id,&#10;    selector: '$SELECTOR$',&#10;    templateUrl: '$NAME$.component.html'&#10;})&#10;export class $COMPONENT_NAME$Component implements OnInit {&#10;    constructor() { }&#10;&#10;    ngOnInit() { }&#10;    $END$&#10;}" description="Component Shorthand" toReformat="false" toShortenFQNames="true">
+  <template name="comp2" value="@Component({&#10;    moduleId: module.id,&#10;    selector: '$SELECTOR$',&#10;    templateUrl: '$NAME$.component.html'&#10;})&#10;export class $COMPONENT_NAME$Component implements OnInit {&#10;    constructor() { }&#10;&#10;    ngOnInit() { }&#10;    $END$&#10;}" description="Component Shorthand" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COMPONENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
