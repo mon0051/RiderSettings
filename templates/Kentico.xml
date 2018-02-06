@@ -1,5 +1,5 @@
 <templateSet group="Kentico">
-  <template name="eval" value="&lt;%= Eval(&quot;$end$&quot;) %&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="eval" value="&lt;%= Eval(&quot;$end$&quot;) %&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -9,7 +9,7 @@
       <option name="TypeScript" value="false" />
     </context>
   </template>
-  <template name="dump" value="&lt;div&gt;&lt;%= Eval(&quot;$end$&quot;) %&gt;&lt;/div&gt;" toReformat="true" toShortenFQNames="true">
+  <template name="dump" value="&lt;div&gt;&lt;%= Eval(&quot;$end$&quot;) %&gt;&lt;/div&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="false" />
@@ -27,7 +27,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="kmg" value="&lt;div&gt;&lt;img src=&quot;&lt;%= Eval(&quot;$end$&quot;) %&gt;&quot; /&gt;&lt;/div&gt;" toReformat="true" toShortenFQNames="true">
+  <template name="kmg" value="&lt;div&gt;&lt;img src=&quot;&lt;%= Eval(&quot;$end$&quot;) %&gt;&quot; /&gt;&lt;/div&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="false" />
