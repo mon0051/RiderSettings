@@ -1,5 +1,5 @@
 <templateSet group="c#">
-  <template name="idiv" value="$&quot;&lt;div&gt;$end$&lt;/div&gt;&quot;;" toReformat="false" toShortenFQNames="true">
+  <template name="idiv" value="$&quot;&lt;div&gt;$end$&lt;/div&gt;&quot;;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="false" />
