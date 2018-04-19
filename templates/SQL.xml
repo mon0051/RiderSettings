@@ -1,0 +1,10 @@
+<templateSet group="SQL">
+  <template name="unp" value="UPDATE Cirts.$table$&#10;SET IsProtected = 0&#10;WHERE IntId IN ($values$);&#10;$end$" description="Unprotect Cirts Entity" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="values" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+</templateSet>
