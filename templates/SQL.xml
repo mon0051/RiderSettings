@@ -7,4 +7,11 @@
       <option name="SQL" value="true" />
     </context>
   </template>
+  <template name="cfk" value="ALTER TABLE Cirts.$table$&#10;    ADD CONSTRAINT FK_$table$_$table2$ FOREIGN KEY ($table2$Id)&#10;    REFERENCES Cirts.$table2$ (Id);" description="Cirts FOREIGN KEY" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
