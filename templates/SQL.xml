@@ -20,4 +20,10 @@
       <option name="SQL" value="true" />
     </context>
   </template>
+  <template name="refac" value="ALTER TABLE dbo.$Entity$&#10;    ADD [CreatedByUserId] [uniqueidentifier] NOT NULL&#10;    CONSTRAINT DF_$Entity$DefaultCreateUser DEFAULT '10000000-0000-0000-0000-000000000000';&#10;GO&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    DROP CONSTRAINT DF_$Entity$DefaultCreateUser;&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    ADD [CreatedUtcDate] [datetime] NOT NULL&#10;    CONSTRAINT DF_$Entity$DefaultCreateTime DEFAULT GETUTCDATE();&#10;GO&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    DROP CONSTRAINT DF_$Entity$DefaultCreateTime;&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    ADD [ModifiedByUserId] [uniqueidentifier] NULL;&#10;GO&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    ADD [ModifiedUtcDate] [datetime] NULL;&#10;GO&#10;&#10;ALTER TABLE dbo.$Entity$&#10;    ADD [RowVersion] [timestamp] NOT NULL;&#10;GO&#10;&#10;ALTER TABLE [dbo].[$Entity$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$Entity$_CreatedBy] FOREIGN KEY ([CreatedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])&#10;GO&#10;&#10;ALTER TABLE [dbo].[$Entity$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$Entity$_ModifiedBy] FOREIGN KEY ([ModifiedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])&#10;GO" toReformat="false" toShortenFQNames="true">
+    <variable name="Entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
