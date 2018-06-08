@@ -35,4 +35,43 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="createcon" value="        [PostRoute]&#10;        public async Task&lt;IHttpActionResult&gt; Post($TypePascalCase$CreateRequest request)&#10;        {&#10;            await _mediator.SendAsync(request);&#10;&#10;            return Ok();&#10;        }" toReformat="false" toShortenFQNames="true">
+    <variable name="TypePascalCase" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+      <option name="powershell.context.file" value="false" />
+    </context>
+  </template>
+  <template name="createreq" value="using MediatR;&#10;using System;&#10;using System.Threading.Tasks;&#10;using TSG.DataWarehouse.Context;&#10;&#10;namespace TSG.DataWarehouse.$TypePascalCase$s.Handlers&#10;{&#10;    public class $TypePascalCase$CreateRequest : IAsyncRequest&lt;$TypePascalCase$&gt;&#10;    {&#10;        &#10;    }&#10;    &#10;    public class $TypePascalCase$CreateHandler : IAsyncRequestHandler&lt;$TypePascalCase$CreateRequest, $TypePascalCase$&gt;&#10;    {&#10;        private readonly ITSGDataWarehouseContext _dbContext;&#10;&#10;        public $TypePascalCase$CreateHandler(ITSGDataWarehouseContext dbContext)&#10;        {&#10;            _dbContext = dbContext;&#10;        }&#10;&#10;        public async Task&lt;$TypePascalCase$&gt; Handle($TypePascalCase$CreateRequest message)&#10;        {&#10;            var $TypeCamelCase$ = new $TypePascalCase$()&#10;            {&#10;&#10;            };&#10;&#10;            return _dbContext.$TypePascalCase$s.Add($TypeCamelCase$);&#10;        }&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="TypePascalCase" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TypeCamelCase" expression="camelCase(TypePascalCase)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+      <option name="powershell.context.file" value="false" />
+    </context>
+  </template>
 </templateSet>
