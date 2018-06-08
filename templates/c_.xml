@@ -74,4 +74,23 @@
       <option name="powershell.context.file" value="false" />
     </context>
   </template>
+  <template name="updatereq" value="using System;&#10;using System.Linq;&#10;using System.Threading.Tasks;&#10;using Flagship.Domain;&#10;using MediatR;&#10;using TSG.DataWarehouse.Context;&#10;&#10;namespace TSG.DataWarehouse.$TypePascalCase$s.Handlers&#10;{&#10;    public class $TypePascalCase$UpdateRequest : IAsyncRequest&#10;    {&#10;        public int Id { get; set; }&#10;    }&#10;&#10;    public class $TypePascalCase$UpdateHandler : AsyncRequestHandler&lt;$TypePascalCase$UpdateRequest&gt;&#10;    {&#10;        private readonly ITSGDataWarehouseContext _dbContext;&#10;&#10;        public $TypePascalCase$UpdateHandler(ITSGDataWarehouseContext dbContext)&#10;        {&#10;            _dbContext = dbContext;&#10;        }&#10;&#10;        protected async override Task HandleCore($TypePascalCase$UpdateRequest message)&#10;        {&#10;            var existing = _dbContext.$TypePascalCase$s.AsQueryable().FirstOrDefault(x =&gt; x.Id == message.Id);&#10;&#10;            if (existing == null)&#10;            {&#10;                throw new EntityNotFoundException($&quot;No $TypePascalCase$ With Id '{message?.Id}' Found&quot;);&#10;            }&#10;&#10;            &#10;        }&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="TypePascalCase" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+      <option name="powershell.context.file" value="false" />
+    </context>
+  </template>
 </templateSet>
