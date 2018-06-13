@@ -26,4 +26,16 @@
       <option name="SQL" value="true" />
     </context>
   </template>
+  <template name="ftab" value="CREATE TABLE [dbo].[$TypePascalCase$] (&#10;    [Id]               [INT] IDENTITY (1, 1) NOT NULL,&#10;    $END$&#10;    [CreatedByUserId]  [UNIQUEIDENTIFIER]    NOT NULL,&#10;    [CreatedUtcDate]   [DATETIME]            NOT NULL,&#10;    [ModifiedByUserId] [UNIQUEIDENTIFIER]    NULL,&#10;    [ModifiedUtcDate]  [DATETIME]            NULL,&#10;    [RowVersion]       [TIMESTAMP]           NOT NULL,&#10;    CONSTRAINT [PK_$TypePascalCase$] PRIMARY KEY CLUSTERED ([Id] ASC)&#10;) ON [PRIMARY]&#10;GO&#10;&#10;ALTER TABLE [dbo].[$TypePascalCase$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$TypePascalCase$_CreatedBy] FOREIGN KEY ([CreatedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])&#10;GO&#10;&#10;ALTER TABLE [dbo].[$TypePascalCase$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$TypePascalCase$_ModifiedBy] FOREIGN KEY ([ModifiedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])" description="flagship table" toReformat="false" toShortenFQNames="true">
+    <variable name="TypePascalCase" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="rtab" value="CREATE TABLE [dbo].[$TypePascalCase$] (&#10;    [Id]            [INT] IDENTITY (1, 1) NOT NULL,&#10;    [Name]          [nvarchar](256) NOT NULL,&#10;&#9;[Code]          [nvarchar](50) NOT NULL,&#10;&#9;[DisplayOrder]  [INT] NOT NULL,&#10;&#9;[IsActive] [bit] NOT NULL,&#10;    [CreatedByUserId]  [UNIQUEIDENTIFIER]    NOT NULL,&#10;    [CreatedUtcDate]   [DATETIME]            NOT NULL,&#10;    [ModifiedByUserId] [UNIQUEIDENTIFIER]    NULL,&#10;    [ModifiedUtcDate]  [DATETIME]            NULL,&#10;    [RowVersion]       [TIMESTAMP]           NOT NULL,&#10;    CONSTRAINT [PK_$TypePascalCase$] PRIMARY KEY CLUSTERED ([Id] ASC)&#10;) ON [PRIMARY]&#10;GO&#10;&#10;ALTER TABLE [dbo].[$TypePascalCase$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$TypePascalCase$_CreatedBy] FOREIGN KEY ([CreatedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])&#10;GO&#10;&#10;ALTER TABLE [dbo].[$TypePascalCase$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$TypePascalCase$_ModifiedBy] FOREIGN KEY ([ModifiedByUserId])&#10;REFERENCES [dbo].[AspNetUsers] ([Id])" description="flagship reference data table" toReformat="false" toShortenFQNames="true">
+    <variable name="TypePascalCase" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
