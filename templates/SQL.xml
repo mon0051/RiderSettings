@@ -38,4 +38,11 @@
       <option name="SQL" value="true" />
     </context>
   </template>
+  <template name="fk" value="ALTER TABLE [dbo].[$FROM_ENTITY$]&#10;    WITH CHECK ADD CONSTRAINT [FK_$FROM_ENTITY$_$TO_ENTITY$] FOREIGN KEY ([$TO_ENTITY$Id])&#10;REFERENCES [dbo].[$TO_ENTITY$] ([Id])&#10;GO" description="Foriegn Key" toReformat="false" toShortenFQNames="true">
+    <variable name="FROM_ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
