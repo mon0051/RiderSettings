@@ -45,4 +45,12 @@
       <option name="SQL" value="true" />
     </context>
   </template>
+  <template name="acol" value="ALTER TABLE dbo.$TABLE$&#10;    ADD $COLNAME$ $DATATYPE$;&#10;$END$" description="new column on existing table" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATATYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
