@@ -4,7 +4,7 @@
     <property name="created">2017-03-21T17:30:24</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.1.0.0</property>
-    <property name="modified">2018-11-05T15:11:50</property>
+    <property name="modified">2018-11-05T17:13:05</property>
     <property name="originalScheme">Atom OneDark copy1</property>
   </metaInfo>
   <console-font>
@@ -355,7 +355,7 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="f5bb12" />
+        <option name="FOREGROUND" value="3299cc" />
       </value>
     </option>
     <option name="DEFAULT_LABEL">
